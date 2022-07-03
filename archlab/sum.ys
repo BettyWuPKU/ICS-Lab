@@ -1,0 +1,42 @@
+# name:WuYuexin ID:1900012946
+# Iteratively sum linked list elements
+# Execution begins at address 0
+	.pos 0
+	irmovq stack, %rsp	# Set up stack pointer
+	call main		# Execute main program
+	halt			# Terminate program
+# Sample linked list
+	.align 8
+ele1:
+	.quad 0x00a
+	.quad ele2
+ele2:
+	.quad 0x0b0
+	.quad ele3
+ele3:
+	.quad 0xc00
+	.quad 0
+# main function
+main:
+	irmovq	ele1, %rdi
+	call sum_list
+	ret
+
+# long sum_list(list_ptr ls)
+# ls in %rdi, val in %rax
+sum_list:
+	irmovq	$0, %rax
+	irmovq	$8, %r10
+	jmp	L2
+L3:
+	mrmovq	(%rdi), %r11
+	addq	%r11, %rax
+	addq	%r10, %rdi
+	mrmovq	(%rdi), %rdi
+L2:
+	andq	%rdi, %rdi
+	jne	L3
+	ret
+# Stack starts here and grows to lower addresses
+	.pos 0x200
+stack:

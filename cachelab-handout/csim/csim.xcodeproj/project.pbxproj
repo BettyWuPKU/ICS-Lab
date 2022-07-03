@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC0A40332570E2E1006F2820 /* tracegen.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A40252570E2E1006F2820 /* tracegen.c */; };
+		EC0A40342570E2E1006F2820 /* test-trans.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A40272570E2E1006F2820 /* test-trans.c */; };
+		EC0A40352570E2E1006F2820 /* trans.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A402A2570E2E1006F2820 /* trans.c */; };
+		EC0A40362570E2E1006F2820 /* cachelab.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A402B2570E2E1006F2820 /* cachelab.c */; };
+		EC0A40372570E2E1006F2820 /* tracegen-ct.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A402C2570E2E1006F2820 /* tracegen-ct.c */; };
+		EC0A40382570E2E1006F2820 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = EC0A40312570E2E1006F2820 /* Makefile */; };
+		EC0A403A2570EFB4006F2820 /* csim.c in Sources */ = {isa = PBXBuildFile; fileRef = EC0A40392570EFB4006F2820 /* csim.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC65F8832570E29200EACA19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC0A40252570E2E1006F2820 /* tracegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tracegen.c; sourceTree = "<group>"; };
+		EC0A40262570E2E1006F2820 /* traces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = traces; sourceTree = "<group>"; };
+		EC0A40272570E2E1006F2820 /* test-trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-trans.c"; sourceTree = "<group>"; };
+		EC0A40282570E2E1006F2820 /* cachelab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cachelab.h; sourceTree = "<group>"; };
+		EC0A40292570E2E1006F2820 /* driver.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = driver.py; sourceTree = "<group>"; };
+		EC0A402A2570E2E1006F2820 /* trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trans.c; sourceTree = "<group>"; };
+		EC0A402B2570E2E1006F2820 /* cachelab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cachelab.c; sourceTree = "<group>"; };
+		EC0A402C2570E2E1006F2820 /* tracegen-ct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "tracegen-ct.c"; sourceTree = "<group>"; };
+		EC0A402D2570E2E1006F2820 /* test-csim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-csim"; sourceTree = "<group>"; };
+		EC0A402E2570E2E1006F2820 /* ct */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ct; sourceTree = "<group>"; };
+		EC0A402F2570E2E1006F2820 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		EC0A40302570E2E1006F2820 /* contracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contracts.h; sourceTree = "<group>"; };
+		EC0A40312570E2E1006F2820 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		EC0A40322570E2E1006F2820 /* csim-ref */ = {isa = PBXFileReference; lastKnownFileType = file; path = "csim-ref"; sourceTree = "<group>"; };
+		EC0A40392570EFB4006F2820 /* csim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = csim.c; sourceTree = "<group>"; };
+		EC65F8852570E29200EACA19 /* csim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = csim; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC65F8822570E29200EACA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC65F87C2570E29200EACA19 = {
+			isa = PBXGroup;
+			children = (
+				EC65F8872570E29200EACA19 /* csim */,
+				EC65F8862570E29200EACA19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC65F8862570E29200EACA19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC65F8852570E29200EACA19 /* csim */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC65F8872570E29200EACA19 /* csim */ = {
+			isa = PBXGroup;
+			children = (
+				EC0A402B2570E2E1006F2820 /* cachelab.c */,
+				EC0A40282570E2E1006F2820 /* cachelab.h */,
+				EC0A40302570E2E1006F2820 /* contracts.h */,
+				EC0A40322570E2E1006F2820 /* csim-ref */,
+				EC0A402E2570E2E1006F2820 /* ct */,
+				EC0A40292570E2E1006F2820 /* driver.py */,
+				EC0A40312570E2E1006F2820 /* Makefile */,
+				EC0A402F2570E2E1006F2820 /* README */,
+				EC0A402D2570E2E1006F2820 /* test-csim */,
+				EC0A40272570E2E1006F2820 /* test-trans.c */,
+				EC0A402C2570E2E1006F2820 /* tracegen-ct.c */,
+				EC0A40392570EFB4006F2820 /* csim.c */,
+				EC0A40252570E2E1006F2820 /* tracegen.c */,
+				EC0A40262570E2E1006F2820 /* traces */,
+				EC0A402A2570E2E1006F2820 /* trans.c */,
+			);
+			path = csim;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC65F8842570E29200EACA19 /* csim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC65F88C2570E29200EACA19 /* Build configuration list for PBXNativeTarget "csim" */;
+			buildPhases = (
+				EC65F8812570E29200EACA19 /* Sources */,
+				EC65F8822570E29200EACA19 /* Frameworks */,
+				EC65F8832570E29200EACA19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = csim;
+			productName = csim;
+			productReference = EC65F8852570E29200EACA19 /* csim */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC65F87D2570E29200EACA19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "吴悦欣";
+				TargetAttributes = {
+					EC65F8842570E29200EACA19 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EC65F8802570E29200EACA19 /* Build configuration list for PBXProject "csim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC65F87C2570E29200EACA19;
+			productRefGroup = EC65F8862570E29200EACA19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC65F8842570E29200EACA19 /* csim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC65F8812570E29200EACA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0A40352570E2E1006F2820 /* trans.c in Sources */,
+				EC0A40332570E2E1006F2820 /* tracegen.c in Sources */,
+				EC0A403A2570EFB4006F2820 /* csim.c in Sources */,
+				EC0A40372570E2E1006F2820 /* tracegen-ct.c in Sources */,
+				EC0A40342570E2E1006F2820 /* test-trans.c in Sources */,
+				EC0A40382570E2E1006F2820 /* Makefile in Sources */,
+				EC0A40362570E2E1006F2820 /* cachelab.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC65F88A2570E29200EACA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC65F88B2570E29200EACA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC65F88D2570E29200EACA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC65F88E2570E29200EACA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC65F8802570E29200EACA19 /* Build configuration list for PBXProject "csim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC65F88A2570E29200EACA19 /* Debug */,
+				EC65F88B2570E29200EACA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC65F88C2570E29200EACA19 /* Build configuration list for PBXNativeTarget "csim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC65F88D2570E29200EACA19 /* Debug */,
+				EC65F88E2570E29200EACA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC65F87D2570E29200EACA19 /* Project object */;
+}

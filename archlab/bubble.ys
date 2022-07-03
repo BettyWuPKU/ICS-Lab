@@ -1,0 +1,61 @@
+# name:WuYuexin ID:1900012946
+# Sort a block of ints(8 bytes) in ascending order using bubble-sort
+# Execution begins at address 0
+	.pos 0
+	irmovq stack, %rsp	# Set up stack pointer
+	call main		# Execute main program
+	halt			# Terminate program
+# Sample arrar
+	.align 8
+Array:
+	.quad 0xbca
+	.quad 0xcba
+	.quad 0xacb
+	.quad 0xcab
+	.quad 0xabc
+	.quad 0xbac
+# main function
+main:
+	irmovq	Array, %rdi
+	irmovq	$6, %rsi
+	call bubble_sort
+	ret
+
+# long bubble_sort(long *data, long count)
+# *data in %rdi, count in %rsi, last in %13, i in %r8
+bubble_sort:
+	irmovq	$0, %r10
+	irmovq 	$1, %r11
+	irmovq	$8, %r12
+	rrmovq	%rdi, %r13
+	addq	%r12, %r13
+L0:
+	subq	%r11, %rsi
+	je	L1
+	addq	%r12, %r13
+	jmp 	L0
+L1:
+	subq	%r12, %r13
+	rrmovq	%r13, %r14
+	subq	%rdi, %r14
+	jle	L3
+	rrmovq	%rdi, %r8
+	subq	%r12, %r8
+L2:
+	addq	%r12, %r8
+	rrmovq	%r13, %r14
+	subq	%r8, %r14
+	jle	L1
+	mrmovq	$8(%r8), %r9
+	mrmovq	(%r8), %rdx
+	subq	%rdx, %r9
+	jle	L2
+	addq	%rdx, %r9
+	rmmovq	%r9, (%r8)
+	rmmovq	%rdx, $8(%r8)
+	jmp	L2
+L3:
+	ret
+# Stack starts here and grows to lower addresses
+	.pos 0x200
+stack:
